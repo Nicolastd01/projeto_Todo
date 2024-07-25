@@ -1,0 +1,226 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    color: #333;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url("../img/phil-botha-ceu2.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: #fdfdfd;
+    color: #102f5e;
+    border: 2px solid #102f5e;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: #102f5e;
+    color: #fff;
+}
+
+button:hover>i {
+    color: #fff;
+}
+
+button i {
+    color: #102f5e;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+input,
+select {
+    padding: .25rem .5rem;
+}
+
+.hide {
+    display: none;
+}
+
+/* Herder */
+
+#conteudo {
+    max-width: 1000px;
+    margin: 3rem auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+#titulo {
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #FFF;
+}
+
+#form-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+#form-container h2 {
+    color: #eee;
+    font-size: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+
+
+#todo-form,
+#edit-form {
+    padding: 1rem;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.edit-form-outside{
+    background-color: #fff;
+    padding-bottom: 1rem;
+}
+
+p {
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+
+.form-control,
+.checkbox {
+    display: flex;
+}
+
+.form-control {
+    margin-bottom: .5rem;
+}
+
+.form-control input {
+    margin-right: .5rem;
+    width: 60%;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.checkbox {
+    margin: .5rem 0;
+    padding: .5rem 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.checkbox p {
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+#cancel-edit-btn {
+    margin-left: 1rem;
+    border: none;
+    background-color: #102f5e;
+    color: #fff;
+}
+
+
+#toolbar {
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+}
+
+#toolbar h4 {
+    margin-bottom: .5rem;
+}
+
+ 
+
+#pesquisar {
+    border-right: 1px solid #ddd;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* #pesquisar form {
+    display: flex;
+} */
+
+#pesquisar input {
+    width: 100%;
+    margin-right: .3rem;
+}
+
+#filtrar {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filtrar select {
+    flex: 1;
+}
+
+/* todo list */
+#todo-list {
+    background-color: #fff;
+    padding-bottom: 1rem;
+    border-radius: 0 0 10px 10px;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+    align-items: center;
+    padding: 1rem;
+    transition: .3s;
+}
+
+.todo h3, 
+.todo h4,
+.todo h5 {
+    flex: 1;
+    font-size: .9rem;
+}
+
+.todo button {
+    margin-left: .4rem;
+}
+
+.done {
+    background-color: #77fd7b;
+}
+
+.done h3, 
+.done h4,
+.done h5{
+    color: #333;
+    text-decoration: line-through;
+    font-style: italic;
+}
+

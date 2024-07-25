@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ta na Lista</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div id="conteudo">
+        <header>
+            <h1 id="titulo">Ta na Lista</h1>
+        </header>
+        <div id="form-container">
+            <div id="add-container">
+                <h2>Adicionar tarefa</h2>
+                <form id="todo-form">
+                    <p>Sua tarefa:</p>
+                    <div class="form-control">
+                        <input id="todo-input" type="text" placeholder="Oque vai fazer?" />
+                        <button type="submit">
+                            <i class="fa-thin fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox-hora">
+                        <p>Teria alguem horario especifico?</p>
+                    </div>
+                    <span id="form-control-hora">
+                        <p>Qual o horario?</p>
+                        <div class="form-control" >
+                            <input type="time" id="hora-input">
+                            <button type="submit">
+                                <i class="fa-solid fa-clock"></i>
+                            </button>
+                        </div>
+                    </span>
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox-data">
+                        <p>Teria alguma data especifica?</p>
+                    </div>
+                    <span id="form-control-data">
+                        <p>Qual a data?</p>
+                        <div class="form-control" >
+                            <input type="date" id="data-input">
+                            <button type="submit">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </button>
+                        </div>
+                    </span>
+                </form>
+            </div>
+            <div id="edit-container" class="hide">
+                <h2>Editar tarefas</h2>
+                <div class="edit-form-outside">
+                    <form id="edit-form">
+                        <p>edite sua tarefa:</p>
+                        <div class="form-control">
+                            <input type="text" id="edit-input" />
+                            <button type="submit">
+                                <i class="fa-solid fa-check-to-slot"></i>
+                            </button>
+                        </div>
+                        <p>Hora</p>
+                        <div class="form-control">
+                            <input type="time" id="edit-input-hora" />
+                            <button type="submit">
+                                <i class="fa-solid fa-check-to-slot"></i>
+                            </button>
+                        </div>
+                        <p>Data</p>
+                        <div class="form-control">
+                            <input type="date" id="edit-input-data" />
+                            <button type="submit">
+                                <i class="fa-solid fa-check-to-slot"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <button id="cancel-edit-btn">Cancelar</button>
+                </div>
+            </div>
+            <div id="pesquisa-container">
+                <h2>Pesquisar tarefa</h2>
+                <div id="toolbar">
+                    <div id="pesquisar">
+                        <h4>Pesquisar:</h4>
+                        <form>
+                            <div class="form-control">
+                                <input type="text" id="pesquisar-input" placeholder="Buscar">
+                                <button id="apagar-btn">
+                                    <i class="fa-solid fa-delete-left"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="filtrar">
+                        <h4>Filtrar:</h4>
+                        <select id="filter-select">
+                            <option value="todos">Todos</option>
+                            <option value="feitos">Feitos</option>
+                            <option value="afazer">A fazer</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="todo-list">
+                    <!-- <div class="todo done">
+                        <div>
+                            <h3>Estoou fazendo alguma coisa...</h3>
+                        </div>
+                        <button class="finish-todo">
+                            <i class="fa-solid fa-check"></i>
+                        </button>
+                        <button class="edit-todo">
+                            <i class="fa-solid fa-pen"></i>
+                        </button>
+                        <button class="remove-todo">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="todo">
+                        <h3>Estoou fazendo alguma coisa... </h3>
+                        <button class="finish-todo">
+                            <i class="fa-solid fa-check"></i>
+                        </button>
+                        <button class="edit-todo">
+                            <i class="fa-solid fa-pen"></i>
+                        </button>
+                        <button class="remove-todo">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
